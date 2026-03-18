@@ -1,0 +1,99 @@
+/* Custom Variables & Utilities */
+:root {
+    --accent-red: #e11d48;
+    --metallic-grey: #4b5563;
+}
+
+.accent-red { color: var(--accent-red); }
+
+/* Hero Styling */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-button {
+    background-color: var(--accent-red);
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #be123c;
+}
+
+/* Vehicle Cards */
+.vehicle-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(225, 29, 72, 0.1);
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.badge-car { background-color: var(--accent-red); }
+.badge-bike { background-color: #2563eb; }
+
+.details-btn {
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-red);
+    transition: color 0.2s;
+}
+
+.details-btn:hover {
+    color: var(--accent-red);
+}
+
+/* Forms */
+.form-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    color: white;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--accent-red);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--accent-red);
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #be123c;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
